@@ -18,7 +18,7 @@ function ShoppingCart({ }: Props) {
     }
 
     return (
-        <div className={styles.shopping}>
+        <div className={styles.shopping} style={toggle ? { transform: 'translatex(0)' } : { transform: 'translatex(347px' }}  >
             <div className={styles.shopping__heading}>
                 <h3 className={styles.shopping__title}>Shopping Cart (3)</h3>
                 <button className={styles.shopping__button} onClick={(e) => toggleCart(e)}>

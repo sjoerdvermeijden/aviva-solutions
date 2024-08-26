@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from 'react'
 
 import Image from 'next/image'
 import Header from '../Header/Header'
+import ShoppingCart from '../ShoppingCart/ShoppingCart'
 
 import styles from './Layout.module.scss'
 
@@ -26,6 +27,7 @@ function Layout({ children }: Props) {
                         alt="Picture of the author"
                     />
                 </div>
+                <ShoppingCart />
                 <Header />
                 {children}
             </div >

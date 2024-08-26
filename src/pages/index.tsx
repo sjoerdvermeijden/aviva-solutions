@@ -5,8 +5,6 @@ import Layout from '../components/Layout/Layout'
 import Panorama from '../components/Panorama/Panorama'
 import Items from '../components/Items/Items'
 
-import ShoppingCart from '../components/ShoppingCart/ShoppingCart';
-
 const inter = Inter({
   weight: ['400', '700'],
   subsets: ['latin'],
@@ -23,7 +21,6 @@ export default function Home() {
       </Head>
       <main className={inter.className}>
         <Layout>
-          <ShoppingCart />
           <Panorama />
           <Items />
         </Layout>
