@@ -25,7 +25,7 @@
             display: inline-block;
             width: 18px;
             height: 3px;
-            background: orange;
+            background: #F39C12;
             border-radius: 2px;
             transform: rotate(45deg);
 
@@ -45,7 +45,7 @@
     }
 
     &__item {
-        border-top: 5px solid orange;
+        border-top: 5px solid #F39C12;
     }
 
     &__bottom {
