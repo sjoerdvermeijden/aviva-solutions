@@ -1,18 +1,27 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Image from 'next/image'
 
 import Button from '../Button/Button'
 
 import styles from './ShoppingCart.module.scss'
 
+import { ToggleContext } from '@/context/NavigationContext';
+
 type Props = {}
 
 function ShoppingCart({ }: Props) {
+    const { toggle, setToggle } = useContext(ToggleContext)
+
+    const toggleCart = (e: React.MouseEvent<HTMLElement>) => {
+        e.preventDefault();
+        setToggle(!toggle)
+    }
+
     return (
         <div className={styles.shopping}>
             <div className={styles.shopping__heading}>
                 <h3 className={styles.shopping__title}>Shopping Cart (3)</h3>
-                <button className={styles.shopping__button}>
+                <button className={styles.shopping__button} onClick={(e) => toggleCart(e)}>
                     <span></span>
                     <span></span>
                 </button>
@@ -21,12 +30,13 @@ function ShoppingCart({ }: Props) {
                 <li className={styles.shopping__item}>
                     <div className={styles.shoppingItem}>
                         <Image
-                            src="/mountain.jpg"
+                            src="/image 1.jpg"
                             className={styles.shoppingItem__image}
                             width={0}
                             height={0}
                             sizes="100vw"
-                            style={{ width: '159px', height: 'auto' }}
+                            quality={100}
+                            style={{ width: '159px', height: 'auto', objectFit: 'cover' }}
                             alt="Picture of the author"
                         />
                         <div className={styles.shoppingItem__content}>
@@ -38,12 +48,13 @@ function ShoppingCart({ }: Props) {
                 <li className={styles.shopping__item}>
                     <div className={styles.shoppingItem}>
                         <Image
-                            src="/mountain.jpg"
+                            src="/image 2.jpg"
                             className={styles.shoppingItem__image}
                             width={0}
                             height={0}
                             sizes="100vw"
-                            style={{ width: '159px', height: 'auto' }}
+                            quality={100}
+                            style={{ width: '159px', height: 'auto', objectFit: 'cover' }}
                             alt="Picture of the author"
                         />
                         <div className={styles.shoppingItem__content}>
@@ -55,12 +66,13 @@ function ShoppingCart({ }: Props) {
                 <li className={styles.shopping__item}>
                     <div className={styles.shoppingItem}>
                         <Image
-                            src="/mountain.jpg"
+                            src="/image 3.jpg"
                             className={styles.shoppingItem__image}
                             width={0}
                             height={0}
                             sizes="100vw"
-                            style={{ width: '159px', height: 'auto' }}
+                            style={{ width: '159px', height: 'auto', objectFit: 'cover' }}
+                            quality={100}
                             alt="Picture of the author"
                         />
                         <div className={styles.shoppingItem__content}>

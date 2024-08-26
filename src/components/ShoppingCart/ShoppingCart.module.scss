@@ -2,12 +2,15 @@
     position: absolute;
     right: 0;
     top: 0;
+    transform: translateX(347px);
     width: 347px;
     height: 100%;
     background: white;
-    z-index: 1;
+    z-index: 4;
+    transition: translate .3s ease;
 
     &__title {
+        font-size: 16px;
         font-weight: bold;
     }
 
@@ -33,6 +36,11 @@
                 transform: rotate(-45deg);
             }
         }
+
+        &:hover,
+        &:focus {
+            cursor: pointer;
+        }
         
     }
 
@@ -46,6 +54,13 @@
 
     &__item {
         border-top: 5px solid #F39C12;
+
+        &:nth-child(odd) {
+
+            .shoppingItem__content {
+                background: #EFEFEF;
+            }
+        }
     }
 
     &__bottom {
@@ -66,6 +81,7 @@
 
     &__image {
         display: flex;
+        flex-shrink: 0;
 
         img {
             flex-shrink: 0;
@@ -74,6 +90,7 @@
     }
 
     &__content {
+        flex-grow: 1;
         padding: 20px;
     }
 

@@ -1,5 +1,25 @@
 .overlay {
-    
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.4;
+    background: black;
+    z-index: 3;
+}
+
+.toggled {
+
+    .overlay {
+        display: block;
+    }
+
+    .shopping {
+        transform: translateX(0px);
+        background: red;
+    }
 }
 
 .headerContainer {

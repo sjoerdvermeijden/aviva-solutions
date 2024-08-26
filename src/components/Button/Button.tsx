@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
 import styles from './Button.module.scss'
 
@@ -7,6 +7,7 @@ type Props = {
 }
 
 function Button({ children }: Props) {
+
     return (
         <button className={styles.button}>
             {children}

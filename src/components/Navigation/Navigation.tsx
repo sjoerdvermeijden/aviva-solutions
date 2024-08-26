@@ -1,11 +1,12 @@
 import React from 'react'
 
 import styles from './Navigation.module.scss'
-import Button from '../Button/Button'
+import ShoppingButton from '../ShoppingButton/ShoppingButton'
 
 type Props = {}
 
 function Navigation({ }: Props) {
+
     return (
         <div>
             <ul className={styles.navigation}>
@@ -13,7 +14,7 @@ function Navigation({ }: Props) {
                 <li className={styles.navigation__item}>Menu item #1</li>
                 <li className={styles.navigation__item}>Menu item #1</li>
                 <li className={styles.navigation__item}>Menu item #1</li>
-                <li className={styles.navigation__item}><Button>Shopping Cart</Button></li>
+                <li className={styles.navigation__item}><ShoppingButton>Shopping Cart</ShoppingButton></li>
             </ul>
         </div>
     )

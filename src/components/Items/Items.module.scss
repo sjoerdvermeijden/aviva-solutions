@@ -9,5 +9,15 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 40px;
     }
+
+    li {
+
+        &:nth-child(even) {
+
+            div {
+                background: #EFEFEF;
+            }
+        }
+    }
 }
 
