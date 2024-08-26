@@ -2,13 +2,38 @@
     position: absolute;
     right: 0;
     top: 0;
-    width: 300px;
+    width: 347px;
     height: 100%;
     background: white;
     z-index: 1;
 
     &__title {
         font-weight: bold;
+    }
+
+    &__button {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        border-width: 0;
+        background: none;
+
+        span {
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: inline-block;
+            width: 18px;
+            height: 3px;
+            background: orange;
+            border-radius: 2px;
+            transform: rotate(45deg);
+
+            &:nth-child(2) {
+                transform: rotate(-45deg);
+            }
+        }
+        
     }
 
     &__heading {
@@ -37,17 +62,34 @@
 }
 
 .shoppingItem {
+    display: flex;
+
+    &__image {
+        display: flex;
+
+        img {
+            flex-shrink: 0;
+        }
+        
+    }
 
     &__content {
         padding: 20px;
     }
 
     &__title {
+        font-size: 16px;
+        font-weight: normal;
         
         &:not(:last-child) {
             margin-bottom: 15px;        
         }
 
+    }
+
+    &__price {
+        font-weight: bold;
+        font-size: 12px;
     }
 
 }

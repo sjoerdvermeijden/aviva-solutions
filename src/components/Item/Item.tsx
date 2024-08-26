@@ -2,13 +2,18 @@ import React from 'react'
 
 import styles from './Item.module.scss'
 
-type Props = {}
+type Props = {
+    children: React.ReactNode;
+    background: string
+}
 
-function Item({ }: Props) {
+function Item({ children, background }: Props) {
+    const itemBackground = background;
     return (
         <div className={styles.item}>
+            {children}
             <a href="" className={styles.item__link}>Read more</a>
-        </div>
+        </div >
     )
 }
 

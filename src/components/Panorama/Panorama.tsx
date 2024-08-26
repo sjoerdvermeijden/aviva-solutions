@@ -9,7 +9,7 @@ type Props = {}
 
 function Panorama({ }: Props) {
     return (
-        <div>
+        <div className={styles.panorama}>
             <Wrap>
                 <Content />
             </Wrap>
