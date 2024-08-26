@@ -1,0 +1,12 @@
+.content {
+    padding: 45px;
+    display: inline-block;
+    border-radius: 3px;
+    background: white;
+    box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75);
+    font-size: 32px;
+
+    &__texture {
+        color: orange;
+    }
+}

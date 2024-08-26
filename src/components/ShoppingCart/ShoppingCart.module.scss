@@ -1,0 +1,53 @@
+.shopping {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background: white;
+    z-index: 1;
+
+    &__title {
+        font-weight: bold;
+    }
+
+    &__heading {
+        padding: 20px;
+    }
+
+    &__items {
+        list-style: none;
+    }
+
+    &__item {
+        border-top: 5px solid orange;
+    }
+
+    &__bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #EFEFEF;
+        padding: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.shoppingItem {
+
+    &__content {
+        padding: 20px;
+    }
+
+    &__title {
+        
+        &:not(:last-child) {
+            margin-bottom: 15px;        
+        }
+
+    }
+
+}

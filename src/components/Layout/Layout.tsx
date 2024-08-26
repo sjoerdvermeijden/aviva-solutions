@@ -8,10 +8,11 @@ type Props = {
 
 function Layout({ children }: Props) {
     return (
-        <div>
+        <>
+            <div className="overlay"></div>
             <Header />
             {children}
-        </div>
+        </>
     )
 }
 

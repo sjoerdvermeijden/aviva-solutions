@@ -1,0 +1,11 @@
+.item {
+    border-radius: 3px;
+    background: #EFEFEF;
+    padding: 20px;
+    box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75);
+
+    &__link {
+        color: orange;
+        text-decoration: underline;
+    }
+}
