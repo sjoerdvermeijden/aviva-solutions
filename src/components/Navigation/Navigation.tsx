@@ -1,16 +1,18 @@
 import React from 'react'
 
+import styles from './Navigation.module.scss'
+
 type Props = {}
 
 function Navigation({ }: Props) {
     return (
         <div>
-            <ul>
-                <li>Menu item #1</li>
-                <li>Menu item #2</li>
-                <li>Menu item #3</li>
-                <li>Menu item #4</li>
-                <li>Shopping cart</li>
+            <ul className={styles.navigation}>
+                <li className={styles.navigation__item}>Menu item #1</li>
+                <li className={styles.navigation__item}>Menu item #1</li>
+                <li className={styles.navigation__item}>Menu item #1</li>
+                <li className={styles.navigation__item}>Menu item #1</li>
+                <li className={styles.navigation__item}>Menu item #1</li>
             </ul>
         </div>
     )
