@@ -2,11 +2,15 @@ import React from 'react'
 
 import styles from './Button.module.scss'
 
-type Props = {}
+type Props = {
+    children: React.ReactNode;
+}
 
-function Button({ }: Props) {
+function Button({ children }: Props) {
     return (
-        <button className={styles.Button}>Button</button>
+        <button className={styles.button}>
+            {children}
+        </button>
     )
 }
 

@@ -1,7 +1,12 @@
 .navigation {
     display: flex;
+    align-items: center;
+    list-style: none;
 
     &__item {
         
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
     }
 }
