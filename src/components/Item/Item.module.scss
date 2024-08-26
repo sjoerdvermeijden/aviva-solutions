@@ -1,25 +1,43 @@
 .item {
+    display: flex;
+    flex-direction: column;
     border-radius: 3px;
     background: #EFEFEF;
-    padding: 20px;
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.75);
+    height: 100%;
 
-    &__link {
-        color: orange;
-        text-decoration: underline;
+    &__image {
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+    
+    &__title {
+        font-weight: normal;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
     }
 
-    &__title {
-
+    &__text {
+        
         &:not(:last-child) {
             margin-bottom: 10px;
         }
     }
     
     &__content {
-        
-        &:not(:last-child) {
-            margin-bottom: 10px;
-        }
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        padding: 20px;
     }
+
+    &__link {
+        display: inline-block;
+        margin-top: auto;
+        color: orange;
+        text-decoration: underline;
+    }
+
 }
