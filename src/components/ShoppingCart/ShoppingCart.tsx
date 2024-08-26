@@ -14,7 +14,7 @@ function ShoppingCart({ }: Props) {
 
     const toggleCart = (e: React.MouseEvent<HTMLElement>) => {
         e.preventDefault();
-        setToggle(!toggle)
+        setToggle(false)
     }
 
     return (
@@ -30,7 +30,7 @@ function ShoppingCart({ }: Props) {
                 <li className={styles.shopping__item}>
                     <div className={styles.shoppingItem}>
                         <Image
-                            src="/image 1.jpg"
+                            src="/images/image 1.jpg"
                             className={styles.shoppingItem__image}
                             width={0}
                             height={0}
@@ -48,7 +48,7 @@ function ShoppingCart({ }: Props) {
                 <li className={styles.shopping__item}>
                     <div className={styles.shoppingItem}>
                         <Image
-                            src="/image 2.jpg"
+                            src="/images/image 2.jpg"
                             className={styles.shoppingItem__image}
                             width={0}
                             height={0}
@@ -66,7 +66,7 @@ function ShoppingCart({ }: Props) {
                 <li className={styles.shopping__item}>
                     <div className={styles.shoppingItem}>
                         <Image
-                            src="/image 3.jpg"
+                            src="/images/image 3.jpg"
                             className={styles.shoppingItem__image}
                             width={0}
                             height={0}

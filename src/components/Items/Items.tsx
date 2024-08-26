@@ -25,7 +25,7 @@ function Items({ }: Props) {
                     <li>
                         <Item>
                             <Image
-                                src="/mountain.jpg"
+                                src="/images/mountain.jpg"
                                 className={style.item__image}
                                 width={0}
                                 height={0}
@@ -51,7 +51,7 @@ function Items({ }: Props) {
                     <li>
                         <Item>
                             <Image
-                                src="/mountain.jpg"
+                                src="/images/mountain.jpg"
                                 className={style.item__image}
                                 width={0}
                                 height={0}

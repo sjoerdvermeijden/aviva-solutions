@@ -21,7 +21,7 @@ function Layout({ children }: Props) {
                 <div className={styles.overlay}></div>
                 <div className={styles.headerContainer}>
                     <Image
-                        src="/mountain.jpg"
+                        src="/images/mountain.jpg"
                         className={styles.headerImage}
                         fill={true}
                         alt="Picture of the author"

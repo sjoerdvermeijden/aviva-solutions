@@ -18,7 +18,7 @@ function Header({ }: Props) {
                         <div className={styles.logo}>
                             <Link href="/">
                                 <Image
-                                    src="/Logo.png"
+                                    src="/images/Logo.png"
                                     className={styles.shoppingItem__image}
                                     width={0}
                                     height={0}

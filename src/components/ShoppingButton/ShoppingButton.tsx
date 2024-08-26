@@ -14,7 +14,7 @@ function Button({ children }: Props) {
     const toggleCart = (e: React.MouseEvent<HTMLElement>) => {
         e.preventDefault();
 
-        setToggle(!toggle)
+        setToggle(true)
     }
 
     return (

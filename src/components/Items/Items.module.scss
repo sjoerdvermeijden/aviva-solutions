@@ -1,13 +1,12 @@
 .items {
-    padding: 70px 0;
+    padding: 35px 0;
     position: relative;
     z-index: 1;
     
     &__list {
         list-style: none;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 40px;
+        gap: 20px;
     }
 
     li {
@@ -17,6 +16,22 @@
             div {
                 background: #EFEFEF;
             }
+        }
+    }
+
+    @media(min-width: '480px') {
+
+        &__list {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    
+    @media(min-width: '767px') {
+        padding: 70px 0;
+
+        &__list {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 40px;
         }
     }
 }

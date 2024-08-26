@@ -6,9 +6,25 @@
     z-index: 1;
 
     &__item {
-        
+        display: none;
+
         &:not(:last-child) {
             margin-right: 28px;
+        }
+
+        &:last-child {
+            display: block;
+        }
+    }
+
+    @media(min-width: '767px') {
+
+        &__item {
+            display: block;
+
+            &:last-child {
+                display: block;
+            }
         }
     }
 }

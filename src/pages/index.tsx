@@ -1,13 +1,26 @@
 import Head from "next/head";
-import { Inter } from "next/font/google";
 
 import Layout from '../components/Layout/Layout'
 import Panorama from '../components/Panorama/Panorama'
 import Items from '../components/Items/Items'
 
-const inter = Inter({
-  weight: ['400', '700'],
-  subsets: ['latin'],
+import localFont from 'next/font/local'
+
+const inter = localFont({
+  src: [
+    {
+      path: '../../public/fonts/Inter/static/Inter_18pt-ExtraLight.ttf',
+      weight: '300'
+    },
+    {
+      path: '../../public/fonts/Inter/static/Inter_18pt-Light.ttf',
+      weight: '400'
+    },
+    {
+      path: '../../public/fonts/Inter/static/Inter_18pt-SemiBold.ttf',
+      weight: '700'
+    }
+  ],
 })
 
 export default function Home() {
