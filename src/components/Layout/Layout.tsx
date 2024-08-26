@@ -13,12 +13,11 @@ function Layout({ children }: Props) {
     return (
         <>
             <div className="overlay"></div>
-            <div className='headerContainer'>
+            <div className={styles.headerContainer}>
                 <Image
                     src="/mountain.jpg"
                     className={styles.headerImage}
-                    width={500}
-                    height={600}
+                    fill={true}
                     alt="Picture of the author"
                 />
             </div>
